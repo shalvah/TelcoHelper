@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+              android:orientation="vertical"
+                android:padding="16dp">
+
+    <android.support.design.widget.TextInputLayout android:id="@+id/recharge_pin_layout"
+                                                   android:layout_width="match_parent"
+android:layout_marginTop="48dp"
+                                                   android:paddingTop="16dp"
+                                                   android:layout_height="wrap_content">
+        <EditText android:id="@+id/recharge_pin"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Enter recharge PIN"
+                  android:inputType="number"
+                  android:paddingTop="16dp"
+                  android:textSize="32sp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@android:color/darker_gray"
+            android:padding="22dp"
+            android:text="Recharge"
+            android:enabled="false"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+    android:id="@+id/recharge_btn"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Telco Helper</string>
+
+    <string-array name="built_in_commands">
+        <item name="command_airtime_balance">Check Airtime Balance</item>
+        <item name="command_data_balance">Check Data Balance</item>
+        <item name="command_recharge">Recharge Airtime</item>
+        <item name="command_customer_care">Customer Care</item>
+        <item name="command_call_me">Please Call Me</item>
+        <item name="command_borrow_airtime">Borrow Airtime</item>
+        <item name="show_my_numbet">Show My Number</item>
+    </string-array>
+
+    <string-array name="telcos">
+        <item name="telco_mtn">MTN</item>
+        <item name="telco_glo">Glo</item>
+        <item name="telco_airtel">Airtel</item>
+        <item name="telco_etisalat">etisalat</item>
+        <item name="telco_ntel">nTel</item>
+    </string-array>
+    <string name="title_activity_select_telco">Select Your Telco</string>
+    <string name="title_activity_enter_code">Enter recharge PIN</string>
+    <string name="help_and_feedback">Help and Feedback</string>
+    <string name="title_activity_enter_number">Enter Phone Number</string>
+    <string name="email">shalvah.adebayo@gmail.com</string>
+    <string name="phone_no">08165213439</string>
+    <string name="about_telco_helper">Tired of keeping track of all your network\'s codes? Telco
+        Helper takes care of all that for you. Now you can do stuff like check your airtime, call
+        customer care and recharge in just a few taps!
+    </string>
+</resources>

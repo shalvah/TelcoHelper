@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <ImageView android:layout_width="match_parent"
+               android:layout_height="100dp"
+    android:src="@drawable/logo"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="Telco Helper v1.0"
+                  android:textSize="20sp"
+                  android:textStyle="italic"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+                  android:paddingBottom="4dp"/>
+        <TextView android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:text="built by Shalvah Adebayo"
+                  android:paddingBottom="@dimen/activity_horizontal_margin"
+                  android:paddingTop="4dp"/>
+        <android.support.v7.widget.CardView
+            android:id="@+id/about_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@android:color/background_dark"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/about_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="About"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/about_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/about_telco_helper"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@color/colorAccent"
+                android:padding="16dp"
+                android:text="Request a Feature"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:id="@+id/request_feature_btn"
+        android:onClick="smsOrMail"/>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@color/colorAccent"
+                android:padding="16dp"
+                android:text="Rate this app"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:id="@+id/rate_btn"
+                android:onClick="rateApp"/>
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@color/colorPrimary"
+                android:padding="16dp"
+                android:text="View Source Code"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:id="@+id/source_code_btn"
+                android:onClick="viewSource"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/feedback_card_view"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:background="@android:color/background_dark"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="4dp">
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:orientation="vertical"
+                          android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/feedback_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Feedback?"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/feedback_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Contact me:"
+                    android:textSize="16sp"/>
+
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="match_parent"
+                        android:text="@string/email"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"/>
+
+                    <ImageButton android:layout_width="0dp"
+                                 android:layout_weight="1"
+                                 android:id="@+id/email_btn"
+                                 android:layout_height="match_parent"
+                                 android:scaleType="center"
+                                 android:src="@android:drawable/sym_action_email"
+                                 android:onClick="smsOrMail"/>
+
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="horizontal"
+                              android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="match_parent"
+                        android:text="@string/phone_no"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"/>
+
+                    <ImageButton android:layout_width="0dp"
+                                 android:layout_weight="1"
+                                 android:id="@+id/sms_btn"
+                                 android:layout_height="match_parent"
+                                 android:scaleType="center"
+                                 android:src="@android:drawable/ic_menu_send"
+                                 android:onClick="smsOrMail"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+    </ScrollView>
